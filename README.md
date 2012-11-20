@@ -3,7 +3,7 @@ QWAFAS
 
 <h2>CQA Investment Challenge</h2>
 
-Team members:  
+<u>Team members:</u>  
 Prof. Frank Morgan  
 Ted Murphy  
 Yang Lu  

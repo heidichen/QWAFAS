@@ -1,0 +1,104 @@
+%
+% QWAFAS factor report template
+% You can ignore the first 50 lines here.  Search for TODO.
+%
+\documentclass[12pt,twoside]{article}
+
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{color}
+\usepackage{enumerate}
+
+
+\setlength{\oddsidemargin}{0pt}
+\setlength{\evensidemargin}{0pt}
+\setlength{\textwidth}{6.5in}
+\setlength{\topmargin}{0in}
+\setlength{\textheight}{8.5in}
+
+\newcounter{problemnum}
+\newcommand{\theproblem}{Factor \theproblemsetnum-\arabic{problemnum}}
+\newenvironment{problems}{
+        \begin{list}{{\bf \theproblem. \hspace*{0.5em}}}
+        {\setlength{\leftmargin}{0em}
+         \setlength{\rightmargin}{0em}
+         \setlength{\labelwidth}{0em}
+         \setlength{\labelsep}{0em}
+         \usecounter{problemnum}}}{\end{list}}
+\makeatletter
+\newcommand{\problem}[1][{}]{\item \let\@currentlabel=\theproblem \textbf{#1}}
+\makeatother
+
+\newcounter{problempartnum}[problemnum]
+\newenvironment{problemparts}{
+        \begin{list}{{\bf (\alph{problempartnum})}}
+        {\setlength{\leftmargin}{2.5em}
+         \setlength{\rightmargin}{2.5em}
+         \setlength{\labelsep}{0.5em}}}{\end{list}}
+\newcommand{\problempart}{\addtocounter{problempartnum}{1}\item}
+
+\newcommand{\releasedate}{November 20, 2012}
+\newcommand{\tabUnit}{3ex}
+\newcommand{\tab}{\hspace*{\tabUnit}}
+
+\newcommand{\yourname}{Your name here} % TODO
+\newcommand{\yourassignedfactors}{The factors here} % TODO
+
+\begin{document}
+
+\begin{center}
+\begin{large} \yourname \end{large} \\
+\begin{large} Assigned Factors:  \yourassignedfactors \end{large} \\
+
+\end{center}
+
+\hrulefill
+\medskip
+
+This report is due {\bf Fri, November 30} at {\bf 11:59PM}. \\
+
+This report should be turned in through the Factor Reports folder at \color{blue} \href{git@github.com:AlexVuLe/QWAFAS.git}{our Git repo}. \color{black} \\
+
+
+\medskip
+
+\hrulefill
+
+\newpage
+
+\begin{problems}
+
+\problem \textbf{Factor Name/Symbol} %TODO
+
+\begin{problemparts}
+
+\problempart \textbf{Citation:}
+
+\fbox{\vbox{
+%TODO:
+Author:\\
+Paper:\\
+Link: (Please upload the papers onto the Factor Reports folder as well) 
+}}
+
+\problempart \textbf{Statistics (annualized):}
+
+\fbox{\vbox{
+%TODO:
+$\alpha$\\
+$\sigma$\\
+\textit{Sharpe}  
+}}
+
+\problempart \textbf{Trading Process:}
+
+\fbox{\vbox{
+%TODO:
+Description:\\  
+}}
+
+\end{problemparts}
+
+\end{problems}
+
+\end{document}

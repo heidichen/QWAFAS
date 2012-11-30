@@ -1,0 +1,6 @@
+EPS Growth 2.48
+SPS Growth 0.667
+Earning Surprise 1.38
+LT Growth Rate 0.307
+Reinvestment Rate 3.23
+Street Revision Magnitude 1.51
